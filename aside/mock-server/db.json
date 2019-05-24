@@ -119,6 +119,21 @@
       "id": "24",
       "name": "Zhytomyr",
       "state_id": "24"
+    },
+    {
+      "id": "25",
+      "name": "Berlin",
+      "state_id": "25"
+    },
+    {
+      "id": "26",
+      "name": "Hanover",
+      "state_id": "26"
+    },
+    {
+      "id": "27",
+      "name": "Stuttgart",
+      "state_id": "27"
     }
   ],
   "countries": [
@@ -126,6 +141,16 @@
       "id": 1,
       "hasc": "UA",
       "name": "Ukraine"
+    },
+    {
+      "id": 2,
+      "hasc": "GR",
+      "name": "Germany"
+    },
+    {
+      "id": 3,
+      "hasc": "FR",
+      "name": "France"
     }
   ],
   "states": [
@@ -272,6 +297,24 @@
       "hasc": "ZT",
       "name": "Zhytomyr Oblast",
       "country_id": "1"
+    },
+    {
+      "id": "25",
+      "hasc": "BL",
+      "name": "Berlin",
+      "country_id": "2"
+    },
+    {
+      "id": "26",
+      "hasc": "LS",
+      "name": "Lower Saxony",
+      "country_id": "2"
+    },
+    {
+      "id": "27",
+      "hasc": "BW",
+      "name": "Baden-Württemberg",
+      "country_id": "2"
     }
   ],
   "users": [
@@ -285,6 +328,7 @@
       "country_id": "1",
       "state_id": "12",
       "city_id": "12",
+      "date": "2019-5-12",
       "createdAt": 1543783744211
     },
     {
@@ -297,6 +341,7 @@
       "country_id": "1",
       "state_id": "16",
       "city_id": "16",
+      "date": "2019-5-22",
       "createdAt": 1543783745664
     },
     {
@@ -309,7 +354,45 @@
       "country_id": "1",
       "state_id": "13",
       "city_id": "13",
+      "date": "2019-5-23",
       "createdAt": 1543783746465
+    },
+    {
+      "name": "John Smith",
+      "email": "Jsmith@gmail.com",
+      "phone_number": "231231231231",
+      "address": null,
+      "about_me": null,
+      "country_id": "1",
+      "state_id": "18",
+      "city_id": "18",
+      "date": "2019-5-24",
+      "id": "0OdqPMg"
+    },
+    {
+      "name": "Maximillian Cooper",
+      "email": "Maxicooper@gmail.com",
+      "phone_number": "451231231231",
+      "address": null,
+      "about_me": null,
+      "country_id": "2",
+      "state_id": "25",
+      "city_id": "25",
+      "date": "2019-5-24",
+      "id": "qw6MRDz"
+    },
+    {
+      "name": "Monty Freeman",
+      "email": "montyfr@i.dot",
+      "phone_number": "231231231231",
+      "address": null,
+      "about_me": null,
+      "country_id": "2",
+      "state_id": "26",
+      "city_id": "26",
+      "date": "2019-5-24",
+      "createdAt": 1558662568699,
+      "id": "nfMKdWo"
     }
   ]
 }

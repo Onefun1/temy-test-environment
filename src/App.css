@@ -1,0 +1,147 @@
+body {
+  background: #ccc;
+}
+
+.app {
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 40px;
+  margin: 5% auto;
+  width: 35%;
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #efefef;
+  box-shadow:
+    /* The top layer shadow */ 0 1px 1px rgba(0, 0, 0, 0.15),
+    /* The second layer */ 0 10px 0 -5px #eee,
+    /* The second layer shadow */ 0 10px 1px -4px rgba(0, 0, 0, 0.15),
+    /* The third layer */ 0 20px 0 -10px #eee,
+    /* The third layer shadow */ 0 20px 1px -9px rgba(0, 0, 0, 0.15);
+}
+
+h3 {
+  color: rgb(93, 93, 93);
+}
+
+input,
+select,
+textarea {
+  font-size: 16px;
+  padding: 10px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+input:focus {
+  outline: none;
+}
+
+/* LABEL ======================================= */
+label {
+  color: #999;
+  font-size: 18px;
+  pointer-events: none;
+  left: 10px;
+  top: 15px;
+  transition: 0.9s ease all;
+  -moz-transition: 0.9s ease all;
+  -webkit-transition: 0.9s ease all;
+}
+
+/* active state */
+input:focus ~ label,
+input:valid ~ label {
+  top: -15px;
+  font-size: 14px;
+  color: rgb(93, 93, 93);
+}
+
+input:invalid::after {
+  contain: "AAAAAAAAAAAAAAAAAAAAAA";
+  color: red;
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+  position: relative;
+  display: block;
+  width: 320px;
+}
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: rgb(93, 93, 93);
+  transition: 0.9s ease all;
+  -moz-transition: 0.9s ease all;
+  -webkit-transition: 0.9s ease all;
+}
+.bar:before {
+  left: 50%;
+}
+.bar:after {
+  right: 50%;
+}
+
+/* active state */
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.button {
+  margin-top: 40px;
+  font-size: 16px;
+  padding: 10px;
+  display: block;
+  width: 300px;
+  border: none;
+  align-items: flex-start;
+  text-align: center;
+  cursor: default;
+  box-sizing: border-box;
+}
+
+.button:hover {
+  background: rgb(93, 93, 93);
+  transition: 0.9s ease all;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+::placeholder {
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+/* UserBase ================================= */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 10px;
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+span {
+  font-weight: 500;
+}
+
+.container__user-block {
+  margin-top: 3%;
+  border: 1px solid black;
+  width: 200px;
+  box-sizing: border-box;
+  padding: 10px;
+  box-shadow: 0 0 10px black;
+}
