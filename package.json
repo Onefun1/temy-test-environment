@@ -1,5 +1,6 @@
 {
   "name": "temy-test-environment",
+  "homepage": "https://onefun1.github.io/temy-test-environment/",
   "version": "1.0.0",
   "description": "Basic environment of test task for front-end candidates",
   "main": "index.js",

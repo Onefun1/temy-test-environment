@@ -1,7 +1,7 @@
 import React from "react";
 
 export const UserBase = props => {
-  const { users, states, countries, cities, data } = props.state;
+  const { users } = props.state;
 
   return (
     <div className="app container">

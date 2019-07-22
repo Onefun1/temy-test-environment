@@ -246,7 +246,16 @@ class App extends React.Component {
             <input className="button" type="submit" value="Submit" />
           </form>
         </div>
-        {isLoading ? <UserBase state={this.state} /> : ""}
+        {isLoading ? (
+          <UserBase state={this.state} />
+        ) : (
+          <h2 style={{ color: "red", textAlign: "center" }}>
+            For correct work, you must run the server in the project directory
+            <span style={{ color: "green" }}>
+              (./aside/mock-server/server.js)
+            </span>
+          </h2>
+        )}
       </div>
     );
   }
